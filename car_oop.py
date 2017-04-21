@@ -6,6 +6,7 @@ class Car(object):
         self.car_type = car_type
         self.num_of_doors = 4
         self.num_of_wheels = 4
+        self.speed = 0
         if self.name.lower() == 'porshe' or self.name.lower() == 'koenigsegg':
             self.num_of_doors = 2
         if self.car_type.lower() == 'trailer':
@@ -13,8 +14,20 @@ class Car(object):
     
     def is_saloon(self):
         if self.car_type.lower() != 'trailer':
-            return True
+            return 'saloon'
+        return 'trailer'
         
-porshe = Car('Porshe', '911 Turbo')
-print porshe.is_saloon() ==True
+    def drive(self, speed):
+        if speed == 7 and self.car_type.lower() == "trailer":
+            self.speed = 77
+            return self
+        elif speed == 3 and self.name.lower() == "mercedes":
+            self.speed = 1000
+            return self
+        else:
+            return "Your cars speed is not yet calculated"
+        
+        
+man = Car('Mercedes', 'SLR500')
+print man.speed
  
