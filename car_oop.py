@@ -26,8 +26,3 @@ class Car(object):
             return self
         else:
             return "Your cars speed is not yet calculated"
-        
-        
-man = Car('Mercedes', 'SLR500')
-print man.speed
- 
