@@ -10,13 +10,3 @@ def fizz_buzz(number):
         return "FizzBuzz"
     else:
         return number
-    
-print fizz_buzz(3)
-print fizz_buzz(33)
-print fizz_buzz(5)
-print fizz_buzz(25)
-print fizz_buzz(15)
-print fizz_buzz(105)
-print fizz_buzz(101)
-print fizz_buzz(8)
-
